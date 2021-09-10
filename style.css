@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./brawl.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thistime #thistime {
+    height: 10px;
+    width: 100px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 20px;
+    left: 40px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    margin: 50px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active {
+    background-color: white;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 5;
+    right: 0;
+  }
+
+.display {
+    margin-top: 20px;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+}
+.peserta img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.listpeserta {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1.nama {
+    font-size: 24px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#display1, #display2, #display3, #display4, #display5, #display6, #display7, #display8 {
+    font-size: 50px;
+    width: 600px;
+    line-height: 100px;
+    height: 100px;
+}
+
+/*
+Nama : M.Thofiq Fikrizal
+Kelas : 4D
+NIM : 3201916097
+*/

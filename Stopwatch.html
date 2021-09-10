@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>UAS Praktikum Desain Web (Stopwatch)</title>
+        <link rel="stylesheet" href="style.css"></meta>
+        <script src="main.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+
+                <div class="logo">
+                    <img src="Logo.jpeg" alt=""></img>
+                </div>
+
+                <div class="display">
+                    <p class="timerDisplay" id="timerHrs">00</p>:
+                    <p class="timerDisplay" id="timerMins">00</p>:
+                    <p class="timerDisplay" id="timerSec">00</p>:
+                    <p class="timerDisplay" id="timerMilisec">00</p>
+                </div>
+
+                <div class="thistime">
+                    <b><p id="thistime"></p></b>
+                </div>
+
+            </div>
+
+            <div class="wrapper">
+
+                <div class="buttons">
+
+                    <button class="btn" type="button" id="startBtn" onclick="startStop()">Mulai
+                    </button>
+                    <button class="btn" type="button" id="resetBtn" onclick="reset()"><span>Mulai Ulang</span>
+                    </button>
+
+                </div>
+
+                <div class="peserta">
+
+                    <div class="peserta1 listpeserta">
+
+                        <div class="image">
+                            <img src="p1.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Byron</h1>
+
+                        <div class="display" id="display1">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai1" onclick="selesai1()">Selesai</button>
+
+                    </div>
+
+                    <div class="peserta2 listpeserta">
+
+                        <div class="image">
+                            <img src="p2.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Amber</h1>
+
+                        <div class="display" id="display2">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai2" onclick="selesai2()">Selesai</button>
+
+                    </div>
+
+                    <div class="peserta3 listpeserta">
+
+                        <div class="image">
+
+                            <img src="p3.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Colonel Ruffs</h1>
+
+                        <div class="display" id="display3">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai3" onclick="selesai3()">Selesai</button>
+
+                    </div>
+
+                    <div class="peserta4 listpeserta">
+
+                        <div class="image">
+                            <img src="p4.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Stu</h1>
+
+                        <div class="display" id="display4">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai4" onclick="selesai4()">Selesai</button>
+                    
+                    </div>
+
+                    <div class="peserta5 listpeserta">
+
+                        <div class="image">
+                            <img src="p5.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Cliff</h1>
+
+                        <div class="display" id="display5">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai5" onclick="selesai5()">Selesai</button>
+
+                    </div>
+
+                    <div class="peserta6 listpeserta">
+
+                        <div class="image">
+                            <img src="p6.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Buzz</h1>
+
+                        <div class="display" id="display6">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai6" onclick="selesai6()">Selesai</button>
+                    
+                    </div>
+
+                    <div class="peserta7 listpeserta">
+
+                        <div class="image">
+                            <img src="p7.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Squeak</h1>
+
+                        <div class="display" id="display7">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai7" onclick="selesai7()">Selesai</button>
+
+                    </div>
+
+                    <div class="peserta8 listpeserta">
+
+                        <div class="image">
+                            <img src="p8.jpg"></img>
+                        </div>
+
+                        <h1 class="nama">Belle</h1>
+
+                        <div class="display" id="display8">
+                            <p class="timerDisplay" id="timerHrs"></p>
+                            <p class="timerDisplay" id="timerMins"></p>
+                            <p class="timerDisplay" id="timerSec"></p>
+                            <p class="timerDisplay" id="timerMilisec">0 : 0 : 0 : 0</p>
+                        </div>
+
+                        <button class="btn" id="selesai8" onclick="selesai8()">Selesai</button>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>M.Thofiq Fikrizal
+        <br>3201916097
+
+    </body>
+
+</html>
